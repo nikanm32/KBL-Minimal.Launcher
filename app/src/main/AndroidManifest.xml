@@ -1,32 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="app.olauncher">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="KB">
 
-    <uses-permission android:name="android.permission.SET_WALLPAPER" />
     <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
-    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <!--For opening alarm app-->
-    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
 
-    <application
-        android:allowBackup="true"
-        android:icon="@drawable/logo"
-        android:label="@string/app_name"
-        android:roundIcon="@drawable/ic_rounded"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+    <application android:label="KB.L">
 
         <activity
-            android:name=".MainActivity"
-            android:configChanges="uiMode"
+            android:name="KB.L"
             android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
             android:launchMode="singleTask"
-            android:taskAffinity=""
-            android:windowSoftInputMode="stateHidden">
+            android:theme="@android:style/Theme.Material.Wallpaper.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.HOME" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -34,42 +23,7 @@
         </activity>
 
         <activity
-            android:name=".helper.FakeHomeActivity"
-            android:enabled="false"
-            android:launchMode="singleTask"
-            android:windowSoftInputMode="stateHidden">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.HOME" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <receiver
-            android:name=".listener.DeviceAdmin"
-            android:permission="android.permission.BIND_DEVICE_ADMIN">
-            <meta-data
-                android:name="android.app.device_admin"
-                android:resource="@xml/policies" />
-            <intent-filter>
-                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
-            </intent-filter>
-        </receiver>
-
-        <service
-            android:name=".helper.MyAccessibilityService"
-            android:label="@string/app_name"
-            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
-            android:process=":serviceProcess">
-            <meta-data
-                android:name="android.accessibilityservice"
-                android:resource="@xml/accessibility_service_config" />
-            <intent-filter>
-                <action android:name="android.accessibilityservice.AccessibilityService" />
-            </intent-filter>
-        </service>
+            android:name="KB.L$F"/>
 
     </application>
 
