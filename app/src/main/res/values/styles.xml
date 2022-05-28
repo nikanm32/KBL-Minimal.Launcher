@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="a" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="d" parent="b">
+        <item name="android:id">@id/l_drawer</item>
+    </style>
+
+    <style name="b">
+        <item name="android:id">@id/l_m</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:animateLayoutChanges">true</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="c" parent="b">
+        <item name="android:id">@id/l_apps</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_margin">32dp</item>
+    </style>
+
+    <style name="e" parent="a">
+        <item name="android:id">@id/e_s</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginTop">84dp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="l" parent="b">
+        <item name="android:id">@id/lv_apps</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:layout_marginTop">180dp</item>
+        <item name="android:divider">@null</item>
+        <item name="android:paddingBottom">48dp</item>
+    </style>
+
+    <style name="t" parent="a">
+        <item name="android:id">@id/t_d</item>
+        <item name="android:layout_gravity">bottom|center_horizontal</item>
+        <item name="android:layout_marginBottom">42dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <item name="t_d" type="id"/>
+    <item name="e_s" type="id"/>
+    <item name="l_m" type="id"/>
+    <item name="l_drawer" type="id"/>
+    <item name="lv_apps" type="id"/>
+    <item name="l_apps" type="id"/>
+</resources>

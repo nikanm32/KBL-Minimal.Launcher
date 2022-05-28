@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/b">
+
+    <LinearLayout style="@style/c">
+
+        <TextView
+            style="@style/a" />
+
+        <TextView
+            style="@style/a"/>
+
+        <TextView
+            style="@style/a"/>
+
+        <TextView
+            style="@style/a"/>
+
+        <TextView
+            style="@style/a"/>
+
+        <TextView
+            style="@style/a"/>
+
+    </LinearLayout>
+
+    <TextView style="@style/t" />
+
+    <FrameLayout
+        style="@style/d">
+
+        <EditText style="@style/e" />
+
+        <ListView style="@style/l"/>
+
+    </FrameLayout>
+
+</FrameLayout>
